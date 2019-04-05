@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head onload="findMax()">
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    function findMax()
+    {
+        var a = parseInt(prompt("Enter first integer"));
+        var b = parseInt(prompt("Enter second integer"));
+        var c = parseInt(prompt("Enter thirst integer"));
+        if (a >= b)
+        {
+            if (a >= c)
+            {
+                document.getElementById("demo").innerHTML = "Max is: " + a;
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML = "Max is: " + c;
+            }
+        }
+        else
+        {
+            if (b >= c)
+            {
+                document.getElementById("demo").innerHTML = "Max is: " + b;
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML = "Max is: " + c;
+            }
+        }
+    }
+</script>
+</body>
+</html>

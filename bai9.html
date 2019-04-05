@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<button onclick="checkSymbol()">Button</button>
+<body>
+<script>
+        var str = prompt('Enter sequence');
+        var x = checkSymbol();
+        alert(x);
+
+function checkSymbol() {
+    var symbol = prompt('Enter symbol that you want to check');
+    var count = 0;
+    var dung = false;
+    for (var i = 0; i < str.length; i++) {
+        if (str[i] === symbol) {
+            count = count + 1;
+            dung = true;
+        }
+    }
+    if (!dung) alert('-1');
+    return count;
+}
+
+</script>
+</body>
+</html>
