@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<button onclick="checkInteger()">Check Integer</button>
+<p id="result"></p>
+<script>
+    function checkInteger()
+    {
+        do {
+            var n = prompt("Enter a number");
+            var num = n*1;
+        } while (num!=n);
+        if (Number.isInteger(num))
+        {
+            document.getElementById("result").innerHTML = 'Number is integer';
+        }
+        else
+        {
+            document.getElementById("result").innerHTML = 'Number is not integer';
+        }
+    }
+</script>
+</body>
+</html>

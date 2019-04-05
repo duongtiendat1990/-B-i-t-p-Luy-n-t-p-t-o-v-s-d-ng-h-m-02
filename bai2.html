@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head onload="circleParameter()">
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    function circleParameter()
+    {
+        var r = Number(prompt("Enter circle radius"));
+        var circumference = 2*Math.PI*r;
+        var area = Math.PI*r*r;
+        document.getElementById("demo").innerHTML = "Circumference is" + circumference + "<br>" + "Circle's area is" + area;
+        return circumference;
+        return area;
+    }
+
+</script>
+</body>
+</html>
