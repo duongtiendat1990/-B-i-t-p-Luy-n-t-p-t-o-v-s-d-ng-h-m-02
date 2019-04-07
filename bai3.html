@@ -10,10 +10,8 @@
     result = calculateFactorial(num);
     alert(result);
     function calculateFactorial(x) {
-        var factorial = 1;
-        for (var i = x; i > 0; i--){
-            factorial = factorial*i;
-        } return factorial;
+        if (x==1) return 1;
+        return x*calculateFactorial(x-1);
     }
 </script>
 </body>
